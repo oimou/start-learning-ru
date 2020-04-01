@@ -1,0 +1,13 @@
+{
+  "name": "ロシア語を始めよう",
+  "version": "0.1.0",
+  "description": "ロシア語を始めよう",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "oimou <s1190013@gmail.com>",
+  "devDependencies": {
+    "async": "^3.2.0"
+  }
+}
