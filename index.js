@@ -6,10 +6,11 @@ const async = require('async')
 const data1 = require("./data1.json").meta
 const data2 = require("./data2.json").meta
 const data = data1.concat(data2)
+const dst = path.join(__dirname, "dest")
 
-fs.mkdirSync(path.join(__dirname, "dest"))
+if (!fs.existsSync(dst)) fs.mkdirSync(dst)
 
-async.eachSeries(data, async function (d) {
+async.forEach(data, async function (d) {
 	const name = d.title.replace(/ /g, '_')
 	const dst_path_mp3 = path.join(__dirname, 'dest', name + '.mp3')
 
