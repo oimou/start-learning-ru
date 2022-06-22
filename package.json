@@ -8,6 +8,6 @@
   },
   "author": "oimou <s1190013@gmail.com>",
   "dependencies": {
-    "async": "^3.2.0"
+    "async": "^3.2.2"
   }
 }
